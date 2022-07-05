@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ui.contactUs.ContactUsActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:fontFamily="@font/tajawal_medium"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:text="@string/contact_us"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp" />
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/quantum_ic_arrow_back_grey600_24"
+                android:tint="@color/colorPrimaryDark" />
+
+        </RelativeLayout>
+
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/tajawal_medium"
+                android:text="@string/contact_us"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_16ssp" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:elevation="@dimen/_4sdp"
+                app:cardCornerRadius="@dimen/_10sdp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_4sdp">
+
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/tajawal_regular"
+                                android:gravity="start|center"
+                                android:text="@string/phone"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_12ssp" />
+
+                            <TextView
+                                android:id="@+id/tv_mobile"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/tajawal_medium"
+                                android:gravity="center"
+                                android:text="@string/phone"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_12ssp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:orientation="horizontal">
+
+
+                            <TextView
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="match_parent"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:fontFamily="@font/tajawal_regular"
+                                android:gravity="start|center"
+                                android:text="@string/address"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_12ssp" />
+
+                            <TextView
+                                android:id="@+id/tv_address"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginTop="@dimen/_4sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:fontFamily="@font/tajawal_medium"
+                                android:gravity="center"
+                                android:text="@string/address"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_12ssp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/_45sdp"
+                            android:layout_marginTop="@dimen/_4sdp"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="@dimen/_80sdp"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/tajawal_regular"
+                                android:gravity="start|center"
+                                android:text="@string/e_mail"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_12ssp" />
+
+                            <TextView
+                                android:id="@+id/tv_email"
+                                android:layout_width="0dp"
+                                android:layout_height="match_parent"
+                                android:layout_marginStart="@dimen/_4sdp"
+                                android:layout_marginEnd="@dimen/_4sdp"
+                                android:layout_weight="1"
+                                android:fontFamily="@font/tajawal_medium"
+                                android:gravity="center"
+                                android:text="@string/e_mail"
+                                android:textColor="@color/text_color"
+                                android:textSize="@dimen/_12ssp" />
+
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:fontFamily="@font/tajawal_medium"
+                android:text="@string/send_message"
+                android:textColor="@color/text_color"
+                android:textSize="@dimen/_16ssp" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:drawableStart="@drawable/ic_note"
+                android:drawablePadding="@dimen/_4sdp"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="@string/message"
+                android:textColor="#333333" />
+
+            <EditText
+                android:id="@+id/et_message"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:background="@drawable/background_gray_with_border"
+                android:fontFamily="@font/tajawal_medium"
+                android:hint="@string/message"
+                android:minHeight="@dimen/_45sdp"
+                android:paddingStart="@dimen/_16sdp"
+                android:textAlignment="viewStart"
+                android:textColor="#333333"
+                android:textSize="@dimen/_14ssp" />
+
+            <include
+                android:id="@+id/bt_send"
+                layout="@layout/progress_btn_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_gravity="center"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_24sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:background="@drawable/background_button"
+                android:fontFamily="@font/tajawal_bold"
+                android:text="@string/register"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp" />
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+</LinearLayout>

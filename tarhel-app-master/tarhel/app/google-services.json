@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "546559561118",
+    "firebase_url": "https://aaber-app.firebaseio.com",
+    "project_id": "aaber-app",
+    "storage_bucket": "aaber-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:546559561118:android:be5cd4028c81e66e7dda8f",
+        "android_client_info": {
+          "package_name": "com.almusand.aaber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "546559561118-67rg2l98e49suu9kru9ospuivj46c4ev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.almusand.aaber",
+            "certificate_hash": "4a45db11ac1420fb207f1f3ab57cc78f9f8dc2dc"
+          }
+        },
+        {
+          "client_id": "546559561118-9qdi077m1svhfu2a4lr5p8rc6nqir4ck.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.almusand.aaber",
+            "certificate_hash": "de5bd3a1ad8e8d1c6e894ca6abfeb2770b568c9f"
+          }
+        },
+        {
+          "client_id": "546559561118-pg97ef2am6ar8uk96bm6ncjd3dh80i6e.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBPkzlLdU1oKVTTWYTY7mb23ikkdVbL6y0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "546559561118-pg97ef2am6ar8uk96bm6ncjd3dh80i6e.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "546559561118-dl8nlmubnu0jd3668rpoq180mapk23ip.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.almusand.aaber"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

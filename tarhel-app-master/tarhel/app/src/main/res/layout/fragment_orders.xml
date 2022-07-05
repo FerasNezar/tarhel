@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.mapOrders.AllOrdersActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/orders_map"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+
+            <TextView
+                android:id="@+id/tv_more_orders"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:background="@drawable/background_gray"
+                android:fontFamily="@font/tajawal_medium"
+                android:padding="@dimen/_4sdp"
+                android:text="@string/more_orders"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/_14ssp" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/bt_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:background="@drawable/bk_button"
+        android:fontFamily="@font/tajawal_medium"
+        android:gravity="center"
+        android:text="@string/refresh"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/_14ssp"
+        android:visibility="gone" />
+
+</FrameLayout>

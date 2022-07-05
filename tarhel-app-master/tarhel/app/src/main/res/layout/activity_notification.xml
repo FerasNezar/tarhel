@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.notification.NotificationActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:fontFamily="@font/tajawal_medium"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:text="@string/notification"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_18ssp" />
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/quantum_ic_arrow_back_grey600_24"
+                android:tint="@color/colorPrimaryDark" />
+
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/rv_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:shimmer_demo_angle="20"
+            app:shimmer_demo_child_count="8"
+            app:shimmer_demo_grid_child_count="1"
+            app:shimmer_demo_layout="@layout/shimmer_notification_item"
+            app:shimmer_demo_layout_manager_type="linear_vertical" />
+
+
+        <LinearLayout
+            android:id="@+id/ly_no_notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_empty_notification" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:fontFamily="@font/tajawal_medium"
+                android:text="@string/you_don_t_have_any_notifications_yet"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

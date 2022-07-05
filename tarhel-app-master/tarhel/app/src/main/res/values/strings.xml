@@ -1,0 +1,204 @@
+<resources>
+    <string name="app_name">Trahel</string>
+    <string name="aaber_name">Trahel</string>
+    <string name="login">Login</string>
+    <string name="logout">Logout</string>
+    <string name="next">Next</string>
+    <string name="skip">Skip</string>
+    <string name="slider_one_desc">A transient application that provides services to transfer orders between cities through freight and delivery representatives whole day.</string>
+    <string name="slider_two_desc">We offer you special experience of shipping your orders between cities in the easiest and fastest way.</string>
+    <string name="slider_three_desc"> Our price offers are attractive, place your order and get the lowest prices now</string>
+
+    <string name="slide_title_one">Welcome To Trahel</string>
+    <string name="slide_title_two">whole cities in your phone</string>
+    <string name="slide_title_three">Place an order now</string>
+
+
+    <string name="drawer_open">Open Drawer</string>
+    <string name="drawer_close">Close Drawer</string>
+    *************************************************
+    <string name="user_name">Username</string>
+    <string name="phone">Phone</string>
+    <string name="password">Password</string>
+    <string name="register">Register</string>
+    <string name="have_account">Have account ?</string>
+    <string name="login_as_mandoub">Login as Agent</string>
+    <string name="enter_ur_info">Enter you information</string>
+    <string name="not_have_account">Not have account ?</string>
+    <string name="enter_ur_phone_and_country">Enter your phone and country</string>
+    <string name="country">Country</string>
+    <string name="verify_by_phone">Verify by phone</string>
+    <string name="verify">Verify</string>
+    <string name="enter_code">Enter the code sent to </string>
+    <string name="resend_code">Resend code</string>
+    <string name="verifaction_code">Verifiaction code</string>
+    <string name="add_country">Choose country</string>
+    <string name="msg_phone_verified">Now Phone Is Verified</string>
+    <string name="Verifaction">Verifiaction</string>
+    <string name="msg_phone_not_valid">Phone Not Valid</string>
+    <string name="msg_code_incorrect">Wrong Verifiaction Code</string>
+    <string name="msg_wrong_username">Enter Valid Username</string>
+    <string name="msg_wrong_phone">Enter Valid Phone</string>
+    <string name="msg_wrong_password">Enter Valid Password</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_my_offers">My Offers</string>
+    <string name="menu_past_orders">Past Orders</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_contact">Contact Us</string>
+    <string name="menu_privacy">Privacy Policy</string>
+    <string name="menu_setting">Settings</string>
+    <string name="menu_logout">Logout</string>
+    <string name="choose_charge_way">Choose Category</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="done">Done</string>
+
+    **************************************************************
+
+    // Language Page
+    <string name="choose_language">Choose Language</string>
+    <string name="arabic">Arabic</string>
+    <string name="english">English</string>
+    <string name="e_mail">Email</string>
+    <string name="attach_id">Attach ID</string>
+    <string name="choose_category">Choose Category</string>
+    <string name="msg_valid_mail">Enter Valid Email</string>
+    <string name="select_picture_profile">Select Profile picture</string>
+    <string name="msg_wrong_personal_id">"Choose  Personal Id "</string>
+    <string name="please_check_your_data">Please check your data</string>
+    <string name="save">Save</string>
+    <string name="login_as_provider">Register As Provider ?</string>
+    <string name="login_as_user">Register As Client</string>
+    <string name="msg_choose_category">Choose at least one Category</string>
+    <string name="success_signup">Success SignUp</string>
+    <string name="msg_filed_cant_empty">This field can\'t be empty</string>
+    <string name="msg_login_failed">Login Failed</string>
+    <string name="weight">Weight</string>
+    <string name="_45_kg">ex: 45 Kg</string>
+    <string name="notes_on_request">Notes on request</string>
+    <string name="time">Delivery Time</string>
+    <string name="arrival_date">Arrival date</string>
+    <string name="pickup_location">Pickup Locaton</string>
+    <string name="drop_off_location">Dropoff Location</string>
+    <string name="request">Request</string>
+    <string name="pick_date">Pick Date</string>
+    <string name="pick_time">Pick Time</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="make_order">Make Order</string>
+    <string name="msg_write_note">Please Write Note</string>
+    <string name="msg_write_weight">Please write order weight</string>
+    <string name="msg_enter_time">Please enter time</string>
+    <string name="msg_enter_date">Please enter date</string>
+    <string name="msg_enter_location">Please pick location</string>
+    <string name="order_has_sent">Order has sent</string>
+    <string name="sar">SAR</string>
+
+    <string name="balance">Balance</string>
+    <string name="current_balance">Current Balance</string>
+    <string name="you_didn_t_make_any_payment_yet">You didn\'t make any payment yet</string>
+    <string name="last_payments">Last Payments</string>
+    <string name="menu_history">History</string>
+    <string name="menu_my_payment">My Payment</string>
+    <string name="category">Category</string>
+    <string name="profile_updated">"Profile updated "</string>
+
+    <string name="you_don_t_have_any_notifications_yet">You don\'t have any notifications yet</string>
+    <string name="notification">Notification</string>
+    <string name="my_orders">My Orders</string>
+    <string name="order_hash">Order #</string>
+
+    <string name="you_don_t_have_any_order_yet">You don\'t have any order yet</string>
+    <string name="cancel_order">Cancel Order</string>
+    <string name="cancel">Cancel</string>
+    <string name="offers">Offers</string>
+    <string name="this_order_not_have_offers_now">This order has no offers yet</string>
+    <string name="offer_hash">Offer #</string>
+    <string name="price">Price</string>
+    <string name="conversation">Conversation</string>
+    <string name="options">Options</string>
+    <string name="code_qr">QR Code</string>
+    <string name="order_details">Order Details</string>
+    <string name="send_problem">Send Complaint</string>
+    <string name="language">language</string>
+    <string name="rate_app">Rate App</string>
+    <string name="share_app">Share App</string>
+    <string name="loading">Loading</string>
+    <string name="contact_us">Contact Us</string>
+    <string name="setting">Setting</string>
+    <string name="more_orders">More Orders</string>
+    <string name="refresh">Refresh</string>
+
+    <string name="msg_logout">Are you sur you want to logout ?</string>
+    <string name="yes">Yes</string>
+    <string name="send_offer">Send Offer</string>
+    <string name="distance">Distance</string>
+    <string name="confirm">Confirm</string>
+    <string name="msg_price">Please enter price</string>
+    <string name="msg_notes">Please enter note</string>
+    <string name="km">KM</string>
+    <string name="offer_saved_successfully">Offer saved successfully</string>
+    <string name="no_offers_found">No Offers Found</string>
+    <string name="cancel_offer">Cancel Offer</string>
+    <string name="checkout">CheckOut</string>
+    <string name="rate_user">Rate</string>
+    <string name="modify_price">Modify Price</string>
+    <string name="mark_delivered">Mark as delivered</string>
+    <string name="client">Client</string>
+    <string name="provider">Provider</string>
+    <string name="accept_offer">Accept Offer</string>
+    <string name="add_rate">Add Rate</string>
+    <string name="msg_success_add_rate">Rate Added</string>
+    <string name="submit">Submit</string>
+    <string name="update">Update Offer</string>
+    <string name="offer_updated">Offer Updated</string>
+    <string name="processed_payment">Processed Payment</string>
+    <string name="payment">Payment</string>
+    <string name="address">Address</string>
+    <string name="total">Total</string>
+    <string name="cash_on_delivery">Cash on delivery</string>
+    <string name="credit_card">Credit Card</string>
+    <string name="payment_options">Payment options</string>
+    <string name="msg_payment_failed">Payment Failed</string>
+
+    <string name="has_rated_you_with_optional">has rated you with optional(</string>
+    <string name="stars">stars</string>
+    <string name="msg_price_updated">"Offer cost changed to be "</string>
+    <string name="msg_success_add_complaint">Your complaint has sent</string>
+    <string name="add_complaint">Add complaint</string>
+    <string name="choose_complaint_image">Choose image</string>
+    <string name="complaint_image">Complaint Image</string>
+    <string name="write_your_complaint">Write your complaint</string>
+    <string name="scan_code_to_make_order_delivered">Scan Code to make order Delivered</string>
+    <string name="has_sent_complain_to_murad_support">sent complaint to muraad support</string>
+    <string name="send_message">Send message</string>
+    <string name="message">Message</string>
+    <string name="send">Send</string>
+    <string name="privacy_terms"><![CDATA[Privacy & Terms]]></string>
+    <string name="location">Location</string>
+    <string name="communicate">Communicate</string>
+    <string name="msg_permission_required">Please add permission from app setting</string>
+    <string name="msg_add_permission">Please accept permission to use app services</string>
+    <string name="delivered">Delivered</string>
+    <string name="pending">Pending</string>
+    <string name="msg_enable_gps_provider">please enable GPS to get your location</string>
+    <string name="confirmed">Confirmed</string>
+    <string name="order_has_been_paid">Order cost will be paid by</string>
+    <string name="msg_no_nearby_orders">No nearby orders found</string>
+    <string name="write_some_thing">Write something..</string>
+    <string name="current_location">Current Location</string>
+    <string name="forget_password">Forget Password</string>
+
+
+    <string-array name="aaber_glyph_strings">
+        <item>M344.723,468.074C230.523,318.598 365.145,255.465 365.145,255.465C537.813,169.121 536.867,63.281 536.867,63.281C603.715,170.98 535.957,272.18 535.957,272.18C561.973,318.598 529.441,366.879 529.441,366.879C555.457,531.207 442.207,497.785 442.207,497.785C406.945,484.785 343.773,518.211 343.773,518.211L348.398,497.785C338.203,481.074 344.723,468.074 344.723,468.074M410.621,267.535C410.621,267.535 319.043,329.426 394.523,430.938C394.523,430.938 427.945,465.605 491.098,438.367C491.098,438.367 539.355,395.047 487.383,387.617L441.629,403.68C443.098,402.77 490.074,373.727 503.465,357.91C503.465,357.91 539.355,318.285 526.988,287.348L452.789,320.734C455.816,318.969 562.566,255.93 540.582,136.332C539.801,137.891 492.879,231.941 410.621,267.535</item>
+        <item>M394.523,430.938C319.039,329.426 410.621,267.535 410.621,267.535C492.879,231.941 539.801,137.891 540.582,136.332C562.566,255.93 455.816,318.973 452.789,320.734L526.988,287.348C539.355,318.285 503.465,357.91 503.465,357.91C490.074,373.73 443.098,402.77 441.629,403.68L487.383,387.617C539.355,395.043 491.098,438.367 491.098,438.367C427.945,465.605 394.523,430.938 394.523,430.938</item>
+    </string-array>
+
+</resources>

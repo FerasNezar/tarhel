@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_home"
+            android:visible="false"
+            android:title="@string/menu_home" />
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_profile"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_history"
+            android:title="@string/menu_history" />
+        <item
+            android:id="@+id/nav_my_payment"
+            android:icon="@drawable/ic_money"
+            android:title="@string/menu_my_payment" />
+
+
+    </group>
+
+    <item android:title="@string/communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_contact"
+                android:icon="@drawable/ic_call"
+                android:title="@string/menu_contact" />
+            <item
+                android:id="@+id/nav_privacy_policy"
+                android:icon="@drawable/ic_privacy_policy"
+                android:title="@string/menu_privacy" />
+            <item
+                android:id="@+id/nav_setting"
+                android:icon="@drawable/ic_setting"
+                android:title="@string/menu_setting" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_logout"
+                android:title="@string/menu_logout" />
+        </menu>
+    </item>
+
+</menu>

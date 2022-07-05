@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.almusand.aaber">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".ui.MyApplication"
+        android:allowBackup="true"
+        android:configChanges="locale"
+        android:icon="@drawable/aaber_logo"
+        android:label="@string/aaber_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@drawable/ic_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+
+        <activity android:name=".ui.scanQrCode.ScanQrCodeActivity">
+
+        </activity>
+
+        <activity android:name=".ui.chat.MessagesActivity" />
+        <activity
+            android:name="com.schibstedspain.leku.LocationPickerActivity"
+            android:label="@string/leku_title_activity_location_picker"
+            android:theme="@style/AppTheme"
+            android:windowSoftInputMode="adjustPan">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/leku_searchable" />
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.main.MainActivityClient" />
+        </activity>
+        <activity android:name=".ui.privacyTerms.PrivacyTermsActivity" />
+        <activity android:name=".ui.contactUs.ContactUsActivity" />
+        <activity android:name=".ui.payment.PaymentActivity" />
+        <activity android:name=".ui.addComplaint.AddComplaintActivity" />
+        <activity android:name=".ui.mapOrders.AllOrdersActivity">
+            <intent-filter>
+                <action android:name="newOrder" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.myOffer.MyOffersActivity" />
+        <activity android:name=".ui.splash.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.sendOffer.SendOfferActivity" />
+        <activity android:name=".ui.setting.SettingActivity" />
+        <activity android:name=".ui.language.LanguageActivity" />
+        <activity android:name=".ui.offerDetails.OfferDetailsActivity" />
+        <activity android:name=".ui.orderOffers.OrderOffersActivity">
+
+        </activity>
+        <activity android:name=".ui.chat.ChatActivity">
+            <intent-filter>
+                <action android:name="newMessage" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.orderDetails.OrderDetailsActivity" />
+        <activity android:name=".ui.myOrders.MyOrdersActivity" />
+        <activity android:name=".ui.notification.NotificationActivity">
+            <intent-filter>
+                <action android:name="newOffer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.profile.ProfileActivity"
+            android:parentActivityName=".ui.main.MainActivityClient" />
+        <activity android:name=".ui.balance.BalanceActivity" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".MapsActivity"
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".ui.sendOrder.SendOrderActivity"
+            android:parentActivityName=".ui.main.MainActivityClient" />
+        <activity android:name=".ui.main.MainActivityClient" />
+        <activity android:name=".ui.main.MainActivityProvider" />
+        <activity
+            android:name=".ui.verifaction.VerifactionActivity"
+            android:parentActivityName=".ui.phone.PhoneActivity" />
+        <activity
+            android:name=".ui.phone.PhoneActivity"
+            android:parentActivityName=".ui.register.RegisterActivity" />
+        <activity android:name=".ui.login.LoginActivity" />
+        <activity
+            android:name=".ui.register.RegisterActivity"
+            android:parentActivityName=".ui.login.LoginActivity" />
+        <activity android:name=".ui.intro.WelcomeActivity" />
+
+        <service
+            android:name=".service.MyFirebaseMessagingService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.google.android.gms.vision.DEPENDENCIES"
+            android:value="barcode" />
+
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+    </application>
+
+</manifest>

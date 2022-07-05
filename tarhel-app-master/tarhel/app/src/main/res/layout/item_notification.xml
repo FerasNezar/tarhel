@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="@dimen/_8sdp"
+    android:layout_marginTop="@dimen/_8sdp"
+    android:layout_marginEnd="@dimen/_8sdp"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@drawable/background_gray_with_border"
+        android:padding="@dimen/_4sdp">
+
+
+        <ImageView
+            android:id="@+id/img_notification"
+            android:layout_width="@dimen/_18sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_notification_unread" />
+
+        <TextView
+            android:id="@+id/tv_notification_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:ellipsize="end"
+            android:fontFamily="@font/tajawal_regular"
+            android:maxLines="2"
+            android:padding="@dimen/_4sdp"
+            android:text="you have message from Mike"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/_12ssp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:fontFamily="@font/tajawal_regular"
+        android:textColor="@color/txt_color"
+        android:textSize="@dimen/_10ssp"/>
+
+
+</LinearLayout>

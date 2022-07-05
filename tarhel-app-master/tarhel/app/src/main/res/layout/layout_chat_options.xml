@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layoutDirection="ltr"
+    android:orientation="vertical"
+    android:padding="@dimen/_16sdp"
+    android:textDirection="ltr"
+    app:layout_behavior="android.support.design.widget.BottomSheetBehavior">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/background_white_with_border"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_modify_price"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="@string/modify_price"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/_14ssp" />
+
+        <View
+            android:id="@+id/view_modify_price"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/tv_mark_delivered"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="@string/mark_delivered"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/_14ssp" />
+
+
+        <TextView
+            android:id="@+id/tv_checkout"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:gravity="center"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="@string/checkout"
+            android:visibility="gone"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/_14ssp" />
+
+        <View
+            android:id="@+id/view_checkout"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="0.2dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/tv_qr"
+            android:layout_width="match_parent"
+            android:visibility="gone"
+            android:layout_height="@dimen/_38sdp"
+            android:gravity="center"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="@string/code_qr"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/_14ssp" />
+
+
+        <TextView
+            android:id="@+id/tv_rate"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:gravity="center"
+            android:visibility="gone"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="@string/rate_user"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/_14ssp" />
+
+        <View
+            android:id="@+id/view_"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@android:color/darker_gray" />
+
+
+        <TextView
+            android:id="@+id/tv_order_details"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:gravity="center"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="@string/order_details"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/_14ssp" />
+
+        <View
+            android:id="@+id/view_edit_price"
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tv_send_problem"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_38sdp"
+            android:gravity="center"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="@string/send_problem"
+            android:textColor="@color/txt_color"
+            android:textSize="@dimen/_14ssp" />
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_cancel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_38sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/bk_button"
+        android:gravity="center"
+        android:fontFamily="@font/tajawal_bold"
+        android:text="@string/cancel"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/_16ssp"
+        android:textStyle="bold" />
+
+
+</LinearLayout>

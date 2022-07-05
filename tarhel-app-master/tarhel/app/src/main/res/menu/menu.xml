@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/notification"
+        android:title="Notification"
+        app:actionLayout="@layout/badge_counter"
+        app:showAsAction="always" />
+</menu>

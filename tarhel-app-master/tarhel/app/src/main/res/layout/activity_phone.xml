@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.phone.PhoneActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:fontFamily="@font/tajawal_medium"
+            android:gravity="center"
+            android:scaleType="fitCenter"
+            android:text="@string/verify_by_phone"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16ssp" />
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_gravity="center"
+            android:adjustViewBounds="true"
+            android:src="@drawable/ic_hand_holding_a_phone"
+            android:layout_marginTop="@dimen/_45sdp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/tajawal_regular"
+            android:text="@string/enter_ur_phone_and_country"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_14ssp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_36sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="@string/country"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/txt_color" />
+
+            <LinearLayout
+                android:id="@+id/sp_country"
+                android:layout_width="0dp"
+                android:layout_weight="3"
+                android:layout_height="@dimen/_36sdp"
+                android:background="@drawable/background_gray_with_border" >
+
+
+                <com.rilixtech.widget.countrycodepicker.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="start"
+                    android:gravity="start|center"
+                    android:paddingStart="@dimen/_16sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    app:ccp_arrowColor="@color/txt_color"
+                    app:ccp_arrowSize="@dimen/_14sdp"
+                    app:ccp_defaultCode="966"
+                    app:ccp_defaultNameCode="SA"
+                    app:ccp_textColor="@color/txt_color" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_24sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/tajawal_regular"
+                android:text="@string/phone"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/txt_color" />
+
+            <EditText
+                android:id="@+id/et_phone"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_36sdp"
+                android:layout_weight="3"
+                android:background="@drawable/background_gray_with_border"
+                android:fontFamily="@font/tajawal_regular"
+                android:hint="@string/phone"
+                android:inputType="phone"
+                android:paddingStart="@dimen/_16sdp"
+                android:textAlignment="viewStart"
+                android:textColor="#333333"
+                android:textSize="@dimen/_12ssp" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/bt_verify"
+            android:layout_width="@dimen/_200sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_45sdp"
+            android:background="@drawable/background_button"
+            android:textSize="@dimen/_16ssp"
+            android:textAllCaps="false"
+            android:fontFamily="@font/tajawal_bold"
+            android:textColor="@color/white"
+            android:text="@string/verify"/>
+
+
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.chat.MessagesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layoutDirection="rtl"
+                android:orientation="horizontal"
+                android:textDirection="rtl">
+
+                <TextView
+                    android:id="@+id/tv_options"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:enabled="false"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:text="@string/options"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_username"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginEnd="@dimen/_45sdp"
+                    android:fontFamily="@font/tajawal_medium"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp" />
+
+                <ImageView
+                    android:id="@+id/img_back"
+                    android:layout_width="@dimen/_24sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:padding="@dimen/_2sdp"
+                    android:src="@drawable/ic_arrow_back"
+                    android:tint="@color/colorPrimaryDark" />
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+            <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+                android:id="@+id/rvMsgList"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:layout_marginTop="@dimen/_4sdp"
+                app:shimmer_demo_angle="20"
+                app:shimmer_demo_child_count="8"
+                app:shimmer_demo_grid_child_count="1"
+                app:shimmer_demo_layout_manager_type="linear_vertical" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

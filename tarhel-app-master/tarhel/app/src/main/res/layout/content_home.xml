@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".ui.main.MainActivityClient"
+    tools:showIn="@layout/app_bar_client">
+
+
+    <FrameLayout
+        android:id="@+id/content_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_10sdp"
+        android:paddingEnd="@dimen/_8sdp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/_16ssp"
+            android:fontFamily="@font/tajawal_medium"
+            android:text="@string/choose_charge_way"/>
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/rv_categories"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:shimmer_demo_angle="20"
+            app:shimmer_demo_child_count="6"
+            app:shimmer_demo_grid_child_count="2"
+            app:shimmer_demo_layout="@layout/shimmer_home_categories"
+            app:shimmer_demo_layout_manager_type="grid" />
+
+    </FrameLayout>
+
+</RelativeLayout>

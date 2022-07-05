@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview_message"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="0dp">
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="end">
+
+        <me.himanshusoni.chatmessageview.ChatMessageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_16sdp"
+            android:animateLayoutChanges="true"
+            android:animationCache="true"
+            android:gravity="end"
+            android:orientation="vertical"
+            app:cmv_arrowGravity="start"
+            app:cmv_arrowMargin="3dp"
+            app:cmv_arrowPosition="right"
+            app:cmv_backgroundColor="@color/textSecondary"
+            app:cmv_backgroundColorPressed="#ff00bcd4"
+            app:cmv_contentPadding="0dp"
+            app:cmv_cornerRadius="3dp"
+            app:cmv_showArrow="true">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:orientation="vertical">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/img_image"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_90sdp"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:adjustViewBounds="true"
+                    android:background="@android:color/transparent"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="centerCrop"
+                    android:visibility="gone"
+                    app:riv_corner_radius="@dimen/_10sdp" />
+
+                <TextView
+                    android:id="@+id/tv_message"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="@dimen/_40sdp"
+                    android:minHeight="@dimen/_26sdp"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_4sdp"
+                    android:fontFamily="@font/tajawal_regular"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_14ssp" />
+
+                <TextView
+                    android:id="@+id/tv_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom|end"
+                    android:gravity="bottom"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:layout_marginEnd="@dimen/_2sdp"
+                    android:fontFamily="@font/tajawal_regular"
+                    android:maxLines="1"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_10ssp" />
+
+            </LinearLayout>
+
+        </me.himanshusoni.chatmessageview.ChatMessageView>
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/iv_image"
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_gravity="end"
+            android:layout_margin="@dimen/_2sdp"
+            android:src="@drawable/ic_default_user"
+            android:visibility="gone"
+            app:civ_border_color="@color/white"
+            app:civ_border_width="2dp" />
+
+
+        <me.jagar.chatvoiceplayerlibrary.VoicePlayerView
+            android:id="@+id/audio_player"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:visualizationPlayedColor="#FFFF"
+            app:visualizationNotPlayedColor="@color/colorAccent"
+            app:playPauseBackgroundColor="@color/textSecondary"
+            app:timingBackgroundColor="#6AFF7700"
+            app:seekBarProgressColor="#000"
+            app:showShareButton="false"
+            app:shareCornerRadius="100"
+            app:playPauseCornerRadius="100"
+            android:visibility="gone"
+            app:showTiming="true"
+            app:viewCornerRadius="100"
+            app:viewBackground="@color/aaber_gray_white"
+            app:progressTimeColor="#000"
+            app:seekBarThumbColor="@color/textSecondary"
+            app:playProgressbarColor="@color/colorAccent"
+            />
+
+        <TextView
+            android:id="@+id/tv_time_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:gravity="bottom"
+            android:layout_marginEnd="@dimen/_22sdp"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:fontFamily="@font/tajawal_regular"
+            android:maxLines="1"
+            android:textColor="@color/textSecondary"
+            android:textSize="@dimen/_10ssp" />
+    </FrameLayout>
+</androidx.cardview.widget.CardView>

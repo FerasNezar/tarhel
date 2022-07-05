@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.myOrders.MyOrdersActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:fontFamily="@font/tajawal_medium"
+                android:gravity="center"
+                android:scaleType="fitCenter"
+                android:text="@string/my_orders"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_16ssp" />
+
+            <ImageView
+                android:id="@+id/img_back"
+                android:layout_width="@dimen/_24sdp"
+                android:layout_height="@dimen/_24sdp"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:padding="@dimen/_2sdp"
+                android:src="@drawable/quantum_ic_arrow_back_grey600_24"
+                app:tint="@color/colorPrimaryDark" />
+        </RelativeLayout>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_32sdp"
+        android:layout_margin="@dimen/_6sdp"
+        android:background="@drawable/bk_main_tap"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_confirmed"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/tajawal_medium"
+            android:gravity="center"
+            android:text="@string/confirmed"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12ssp" />
+        <TextView
+            android:id="@+id/tv_delivered"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/tajawal_medium"
+            android:gravity="center"
+            android:text="@string/delivered"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tv_pending"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="@drawable/bk_button"
+            android:fontFamily="@font/tajawal_medium"
+            android:gravity="center"
+            android:text="@string/pending"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/_12ssp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/rv_pending_orders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_6sdp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            app:shimmer_demo_angle="20"
+            app:shimmer_demo_child_count="8"
+            app:shimmer_demo_grid_child_count="1"
+            app:shimmer_demo_layout="@layout/shimmer_item_my_order"
+            app:shimmer_demo_layout_manager_type="linear_vertical" />
+
+        <com.cooltechworks.views.shimmer.ShimmerRecyclerView
+            android:id="@+id/rv_complete_orders"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="@dimen/_6sdp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            android:visibility="gone"
+            app:shimmer_demo_angle="20"
+            app:shimmer_demo_child_count="8"
+            app:shimmer_demo_grid_child_count="1"
+            app:shimmer_demo_layout="@layout/shimmer_item_my_order"
+            app:shimmer_demo_layout_manager_type="linear_vertical" />
+
+
+        <LinearLayout
+            android:id="@+id/ly_no_roders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="@dimen/_70sdp"
+                android:layout_height="@dimen/_80sdp"
+                android:adjustViewBounds="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_empty_cart" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_16sdp"
+                android:fontFamily="@font/tajawal_medium"
+                android:text="@string/you_don_t_have_any_order_yet"
+                android:textColor="@color/txt_color"
+                android:textSize="@dimen/_14ssp" />
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>
